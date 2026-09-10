@@ -114,3 +114,33 @@ Before you submit your solution, you need to save your progress with git.
 * Add your changes to the staging area by executing git add .
 * Create a commit by executing git commit -m "Your commit message"
 * Push your commits to GitHub by executing git push origin main
+
+## Completed Application
+
+This application implements a many-to-many relationship between books and authors using contracts as the intermediary.
+
+### Functionality
+
+- Books store a title and track their related contracts and authors.
+- Authors store a name and track their related contracts and books.
+- Contracts connect authors and books while storing the contract date and royalty amount.
+- Authors can sign contracts with books.
+- Authors can calculate their total royalties.
+- Contracts can be filtered by date.
+- Contract properties validate that authors, books, dates, and royalties use the required types.
+
+### Relationship
+
+The many-to-many relationship is modeled through the Contract class:
+
+`Author <-> Contract <-> Book`
+
+An author can have contracts with multiple books, and a book can have contracts with multiple authors.
+
+### Testing
+
+The completed implementation passes all 14 tests in the many-to-many test suite.
+
+### Completed Work Screenshot
+
+![Completed Work](screenshot.png)
